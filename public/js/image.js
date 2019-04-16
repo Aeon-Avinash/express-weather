@@ -14,7 +14,6 @@ shuffleBtn.addEventListener('click', () => {
   const weatherArr = ['rain', 'snow', 'sunny', 'clouds', 'sunny', 'weather'];
   const rnd = Math.floor(Math.random() * weatherArr.length);
   const rndWeather = weatherArr[rnd]; 
-  // image.setAttribute('src', `https://source.unsplash.com/400x300/?${rndWeather}`);
 
   const img = document.createElement('img');
   img.setAttribute('src', `https://source.unsplash.com/400x300/?${rndWeather}`);
