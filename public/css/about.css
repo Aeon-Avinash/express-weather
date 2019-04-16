@@ -4,6 +4,7 @@
   margin: 20px auto;
 }
 
-h3.aboutHeader {
+h3.aboutHeader, h3.aboutBody {
   text-align: center;
+  max-width: 400px;
 }
