@@ -1,0 +1,25 @@
+{{> header}}
+<link rel="stylesheet" href="/css/help.css">
+</head>
+
+<body>
+  {{> nav}}
+  <main>
+    <h3 class="helpHeader">Api and Server Help-Desk</h3>
+    {{#if helpDir.length}}
+    <ul class="helpDir">
+      {{#each helpDir}}
+      <li class="helpContact">
+        <strong>{{contactPoint}}</strong>
+        <span> || </span>
+        <span>{{message}}</span>
+        <button>Contact</button>
+      </li>
+      {{/each}}
+    </ul>
+    {{else}}
+    <p>No help executives available right now</p>
+    {{/if}}
+  </main>
+
+  {{> footer}}

@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333333;
+}
+
+nav {
+  width: 100%;
+  height: 150px;
+  border-bottom: 1px solid #333333;
+  color: #333333;
+  margin-top: 0;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 15%;
+}
+
+.nav-brand {
+  font-size: 64px;
+  margin: 10px;
+  margin-left: 15%;
+}
+
+.nav-item {
+  margin: 10px;
+}
+
+.nav-item a,
+.nav-brand a {
+  text-decoration: none;
+  color: #888888;
+}
+
+.nav-item a:hover,
+.nav-item a:active,
+.nav-item a.active {
+  color: lightblue;
+  text-decoration: underline solid #888888;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 650px;
+  margin: 40px auto;
+  padding: 0;
+}
+
+p {
+  max-width: 400px;
+}
+
+input {
+  color: #333333;
+  background-color: white;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  padding: 5px 8px;
+  margin: 10px 5px;
+}
+
+button {
+  color: #333333;
+  background-color: #cccccc;
+  border: 1px solid #888888;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  padding: 5px 8px;
+  margin: 10px 5px;
+}
+
+button:hover {
+  color: #cccccc;
+  background-color: #333333;
+  cursor: pointer;
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  border: 1px solid #333333;
+  margin-top: 16px;
+  padding: 5px;
+  color: #888888;
+}
+
+footer p {
+  text-align: center;
+  margin: 0 auto;
+}
+
+footer p a {
+  text-decoration: underline solid #888888;
+  color: #888888;
+}
+
+footer p a:hover {
+  color: lightblue;
+}
+
+.imageDiv {
+  display: block;
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    padding: 10px;
+  }
+
+  nav {
+    flex-direction: column;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-list {
+    margin: none;
+    justify-content: center;
+  }
+
+  .nav-brand {
+    text-align: center;
+    font-size: 48px;
+    margin: 10px auto;
+  }
+}

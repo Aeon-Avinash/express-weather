@@ -1,0 +1,9 @@
+.expWeatherImg {
+  width: 300px;
+  display: block;
+  margin: 20px auto;
+}
+
+h3.aboutHeader {
+  text-align: center;
+}

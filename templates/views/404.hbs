@@ -1,0 +1,17 @@
+{{> header}}
+</head>
+
+<body>
+  {{> nav}}
+  <main>
+    {{#if errHelpMessage}}
+    {{errHelpMessage}}
+    <p>Please contact Server Admin: serverAdmin@expweather.com</p>
+    <p>Or contact our help desk at <a href="/help">Help</a></p>
+    {{else}}
+    <h3>404: Page not found!</h3>
+    <p>Please check your link.</p>
+    {{/if}}
+  </main>
+
+  {{> footer}}

@@ -1,0 +1,20 @@
+{{> header}}
+</head>
+
+<body>
+  {{> nav}}
+  <main>
+    <h1>Welcome to {{ pageTitle }}</h1>
+    <div>
+      <button id="toggleBtn">Hide Image</button>
+      <button id="shuffleBtn">Shuffle Image</button>
+    </div>
+    <div class="imageDiv">
+      <img class="image" src="https://source.unsplash.com/400x300/?weather" alt="Weather Image" width="400px"
+        height="300px" />
+    </div>
+  </main>
+
+  <script src="/js/image.js"></script>
+  <script src="/js/app.js"></script>
+  {{> footer}}
